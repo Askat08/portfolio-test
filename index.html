@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/favicons?domain=apple.com"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- navbar animation -->
+    <!-- <link rel="stylesheet" href="navbarAnimation.css" /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <title>Dark Light Mode</title>
+  </head>
+  <body>
+    <!-- Darl Mode Switch -->
+    <div class="theme-switch-wrapper">
+      <span id="toggle-icon">
+        <span class="toggle-text">Light Mode</span>
+        <i class="fas fa-sun"></i>
+      </span>
+      <label class="theme-switch">
+        <input type="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+    <!-- Navigation -->
+    <div class="hero"></div>
+    <nav id="nav">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- Mobile nav icon -->
+    <div class="mobile-bar">
+      <i id="bar" class="fas fa-bars"></i>
+      <!-- <i class="fas fa-times"></i> -->
+      <div class="sidebar" id="sidebar">
+        <a href="#home" data-aos="fade-right" data-aos-delay="100">Home</a>
+        <a href="#about" data-aos="fade-right" data-aos-delay="200">About</a>
+        <a href="#projects" data-aos="fade-right" data-aos-delay="300"
+          >Projects</a
+        >
+        <a href="#contact" data-aos="fade-right" data-aos-delay="400"
+          >Contact</a
+        >
+      </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+      <!-- Animation text -->
+      <div class="caption text-center">
+        <!-- text type -->
+        <div class="banner-caption">
+          <span class="blc"><i class="fas fa-laptop-code"></i> |</span>
+          <div class="console-container">
+            <span id="text"></span>
+            <div class="console-underscore" id="console">&#95;</div>
+          </div>
+        </div>
+        <!-- text type end -->
+
+        <!-- =================== Scroll arrow ====================    -->
+        <div id="scroll-arrow" class="demo">
+          <a href="#about"><span></span><span></span><span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" data-aos="zoom-in-down">
+      <div class="about-container">
+        <div class="about-img-wrapper">
+          <div class="about-img">
+            <img
+              id="about-img"
+              src="./img/coder-about-light.svg"
+              alt="profile"
+            />
+            <!--https://icons8.com-->
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>About me</h3>
+          <div class="header-underline"></div>
+          <p>
+            👋 , Determined and productive web developer with a passion for
+            creative solutions. Proficient in Front-end / Back-end. Dedicated to
+            learning additional technologies and coding languages.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- About Section -->
+    <!-- <section id="about1">
+      <h1>dark Light Mode</h1>
+      <div class="about-container">
+        <div class="image-container" data-aos="zoom-in" data-aos-delay="  ">
+          <h2>Developer</h2>
+          <img id="image1" src="./img/dev-light.svg" alt="developer" />
+        </div>
+        <div class="image-container">
+          <h2>Programming</h2>
+          <img
+            id="image2"
+            src="./img/programming-light.svg"
+            alt="programming"
+          />
+        </div>
+        <div class="image-container">
+          <h2>Code Thinking</h2>
+          <img id="image3" src="./img/code-light.svg" alt="code" />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Projects Section -->
+    <!-- <div class="card">
+      <img src="./img/fittrack.gif" alt="FitTracker" />
+      <div class="overlay">
+        <h2 class="card-title">FitTrack</h2>
+        <div class="icon-links">
+          <a href="https://github.com/Askat08/fit-tracker" target="_blank"
+            ><i class="fa fa-code"></i
+          ></a>
+          <a href="https://fittrackapp.herokuapp.com/" target="_blank"
+            ><i class="fa fa-eye"></i
+          ></a>
+          <a type="button" xw>
+            <i class="fas fa-info-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Projects Section End -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1>Work</h1>
+      <!-- <div class="buttons">
+        <button class="primary">Primary</button>
+        <button class="secondary">Secondary</button>
+        <button class="primary" disabled>Disabled</button>
+        <button class="outline">Outline</button>
+        <button class="secondary outline">Alt Outline</button>
+        <button class="outline" disabled>Disabled</button>
+      </div> -->
+      <!-- Project box -->
+      <div class="card" data-aos="zoom-in-up">
+        <div class="project-img">
+          <img src="./img/fittrack.gif" alt="FitTracker" />
+        </div>
+        <div class="overlay">
+          <h2 class="card-title">FitTrack</h2>
+          <div class="icon-links">
+            <a href="https://github.com/Askat08/fit-tracker" target="_blank"
+              ><i class="fa fa-code"></i
+            ></a>
+            <a href="https://fittrackapp.herokuapp.com/" target="_blank"
+              ><i class="fa fa-eye"></i
+            ></a>
+            <a type="button" xw>
+              <i class="fas fa-info-circle"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Project box end -->
+
+      <!-- Project box -->
+      <div class="card" data-aos="zoom-in-up">
+        <div class="project-img">
+          <img class="img-thumbnail" src="./img/xpns.gif" alt="XPNS" />
+        </div>
+        <div class="overlay">
+          <h2 class="card-title">XPNS App</h2>
+          <p class="icon-links">
+            <a href="https://github.com/Askat08/exp-track" target="_blank"
+              ><span class="fa fa-code"></span
+            ></a>
+            <a
+              href="https://mighty-bastion-61449.herokuapp.com/"
+              target="_blank"
+              ><span class="fa fa-eye"></span
+            ></a>
+            <a type="button" data-toggle="modal" data-target="#xpns">
+              <span class="fas fa-info-circle"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- Project box end -->
+
+      <!-- Project Box -->
+      <div class="card" data-aos="zoom-in-up">
+        <div class="project-img">
+          <img
+            class="img-thumbnail"
+            src="./img/twit-clone.gif"
+            alt="twitter-clone"
+          />
+        </div>
+        <div class="overlay">
+          <h2>Twit-clone</h2>
+          <p class="icon-links">
+            <a href="https://github.com/Askat08/twitter-clone" target="_blank"
+              ><span class="fa fa-code"></span
+            ></a>
+            <a href="https://twitt-clone.herokuapp.com/" target="_blank"
+              ><span class="fa fa-eye"></span
+            ></a>
+            <a type="button" data-toggle="modal" data-target="#twitterclone">
+              <span class="fas fa-info-circle"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- Project box end -->
+
+      <!-- Project Box -->
+      <div class="card" data-aos="zoom-in-up">
+        <div class="project-img">
+          <img
+            class="img-thumbnail"
+            src="./img/comicStore.gif"
+            alt="comic-store"
+          />
+        </div>
+        <div class="overlay">
+          <h2>Marvel Comics</h2>
+          <p class="icon-links">
+            <a href="https://github.com/Askat08/e-store" target="_blank"
+              ><span class="fa fa-code"></span
+            ></a>
+            <a href="https://askat08.github.io/e-store/" target="_blank"
+              ><span class="fa fa-eye"></span
+            ></a>
+            <a type="button" data-toggle="modal" data-target="#comicbook">
+              <span class="fas fa-info-circle"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- Project Box end -->
+
+      <div class="text-box" id="text-box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          veniam cumque mollitia eaque assumenda tempore saepe exercitationem
+          consequatur quos culpa ex, omnis enim, ea ipsam iste? Praesentium
+          possimus consectetur atque.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <!-- <h1>Contact me</h1>
+      <div class="social-icons">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-codepen"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div> -->
+      <!-- Footer -->
+      <div class="contact-body">
+        <div class="contact-logo">
+          <img src="img/contact-us.svg" alt="Logo" />
+        </div>
+        <div class="contact-text">
+          <a href="#">askatbakyev@gmail.com</a>
+        </div>
+        <div class="contact-icons">
+          <a href="#" target=""><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="https://github.com/Askat08" target="_blank"
+            ><i class="fab fa-github-square fa-2x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/askat-bakyev/" target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
+
+      <hr class="socket" />
+      <strong>Askat &copy 2020.</strong>
+    </section>
+    <!-- Script -->
+    <script src="js/script.js"></script>
+    <!-- <script src="navbarAnimation.js"></script> -->
+    <script src="js/navbarHideAnimation.js"></script>
+    <!-- <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> -->
+    <script src="js/animatedText.js"></script>
+    <!-- <script src="scrollArrow.js"></script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/animation.js"></script>
+  </body>
+</html>
