@@ -24,6 +24,10 @@
     <title>Dark Light Mode</title>
   </head>
   <body>
+    <!-- Splash -->
+    <div class="splash">
+      <h1 class="fade-in">welcome to my website</h1>
+    </div>
     <!-- Darl Mode Switch -->
     <div class="theme-switch-wrapper">
       <span id="toggle-icon">
@@ -36,7 +40,15 @@
       </label>
     </div>
     <!-- Navigation -->
-    <div class="hero"></div>
+    <div
+      class="hero"
+      data-aos="zoom-in"
+      data-aos-easing="ease-out-back"
+      data-aos-delay="2000"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500"
+    ></div>
     <nav id="nav">
       <a href="#home">HOME</a>
       <a href="#about">ABOUT</a>
@@ -282,7 +294,7 @@
         <div class="contact-logo">
           <img src="img/contact-us.svg" alt="Logo" />
         </div>
-        <div class="contact-text">
+        <!-- <div class="contact-text">
           <a href="#">askatbakyev@gmail.com</a>
         </div>
         <div class="contact-icons">
@@ -293,12 +305,29 @@
           <a href="https://www.linkedin.com/in/askat-bakyev/" target="_blank"
             ><i class="fab fa-linkedin fa-2x"></i
           ></a>
-        </div>
+        </div> -->
       </div>
 
       <hr class="socket" />
       <strong>Askat &copy 2020.</strong>
     </section>
+    <!-- Vertical contacts  -->
+    <div class="vertical-contacts">
+      <div class="fixed-icons">
+        <a href="#" target=""><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="https://github.com/Askat08" target="_blank"
+          ><i class="fab fa-github-square fa-2x"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/askat-bakyev/" target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <div class="vertical"></div>
+      </div>
+      <div class="fixed-email">
+        <a href="#">askatbakyev@gmail.com</a>
+        <div class="vertical"></div>
+      </div>
+    </div>
     <!-- Script -->
     <script src="js/script.js"></script>
     <!-- <script src="navbarAnimation.js"></script> -->

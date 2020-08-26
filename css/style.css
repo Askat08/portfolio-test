@@ -45,8 +45,126 @@ body {
   flex-direction: column;
 }
 
+/* INTRO */
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 200;
+  color: #fff;
+  text-align: center;
+  line-height: 90vh;
+}
+
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: -10;
+  color: #fff;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* INTRO END */
+
+/* FIXED ICONS */
+.vertical-contacts {
+  color: var(--on-background);
+}
+
+.fixed-icons {
+  position: fixed;
+  bottom: 10px;
+  /* margin-left: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  /* border: 1px solid red; */
+}
+
+.fixed-icons a {
+  font-size: 10px;
+  margin-left: 25px;
+  color: var(--on-background);
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.fixed-icons a:hover {
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.fixed-email {
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  /* border: 1px solid red; */
+}
+
+.fixed-email a {
+  font-family: monospace;
+  /* font-size: px; */
+  font-weight: normal;
+  margin-left: 28px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: var(--on-background);
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.fixed-email a:hover {
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.vertical {
+  border-left: 2px solid #aaa;
+  border-radius: 1px;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+
 section {
   min-height: 100vh;
+  width: 80vw;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -8,7 +8,15 @@ const aboutImg = document.getElementById("about-img");
 const textBox = document.getElementById("text-box");
 const bar = document.querySelector(".fa-bars");
 const sidebar = document.querySelector(".sidebar");
+const splash = document.querySelector(".splash");
 let dark = true;
+// const nav = document.getElementById('nav');
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  setTimeout(() => {
+    splash.classList.add("display-none");
+  }, 2000);
+});
 // const nav = document.getElementById('nav');
 
 // Dark or Light Images

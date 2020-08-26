@@ -4,6 +4,16 @@ window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   const themeWrapper = document.querySelector(".theme-switch-wrapper");
   const bar = document.querySelector(".mobile-bar");
+  const icons = document.querySelector(".fixed-icons");
+  const email = document.querySelector(".fixed-email");
+
+  if (prevScrollpos > 800) {
+    icons.style.opacity = "1";
+    email.style.opacity = "1";
+  } else {
+    icons.style.opacity = "0";
+    email.style.opacity = "0";
+  }
 
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav").style.top = "0";
