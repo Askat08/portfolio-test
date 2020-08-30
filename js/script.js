@@ -6,7 +6,7 @@ const image2 = document.getElementById("image2");
 const image3 = document.getElementById("image3");
 const aboutImg = document.getElementById("about-img");
 const textBox = document.getElementById("text-box");
-const bar = document.querySelector(".fa-bars");
+const bar = document.querySelector("#nav-icon4");
 const sidebar = document.querySelector(".sidebar");
 const splash = document.querySelector(".splash");
 let dark = true;
@@ -58,16 +58,17 @@ function switchTheme(event) {
 // Mobile navbar toggle
 function barToggle() {
   sidebar.classList.toggle("side-toggle");
-  bar.classList.toggle("barIcon");
+  bar.classList.toggle("open");
+  console.log("toggle");
 }
 
 // Hide side bar on click outside if div
 window.onload = function () {
   document.onclick = function (e) {
-    if (e.target.id !== "bar") {
+    if (e.target.id !== "nav-icon4") {
       //element clicked wasn't the div; hide the div
-      sidebar.classList.remove("side-toggle");
-      bar.classList.remove("barIcon");
+      // sidebar.classList.remove("side-toggle");
+      // bar.classList.remove("open");
     }
   };
 };

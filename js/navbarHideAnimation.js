@@ -15,14 +15,14 @@ window.onscroll = function () {
     email.style.opacity = "0";
   }
 
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-    themeWrapper.style.top = "15px";
-    bar.style.top = "15px";
-  } else {
-    document.getElementById("nav").style.top = "-60px";
-    themeWrapper.style.top = "-60px";
-    bar.style.top = "-60px";
+  if (prevScrollpos > currentScrollPos + 10) {
+    document.getElementById("nav").style.transform = "translateY(0)";
+    themeWrapper.style.transform = "translateY(0)";
+    bar.style.transform = "translateY(0)";
+  } else if (prevScrollpos <= currentScrollPos) {
+    document.getElementById("nav").style.transform = "translateY(-90px)";
+    themeWrapper.style.transform = "translateY(-90px)";
+    bar.style.transform = "translateY(-90px)";
   }
-  prevScrollpos = currentScrollPos;
+  prevScrollpos = currentScrollPos + 10;
 };
