@@ -3,7 +3,7 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   const themeWrapper = document.querySelector(".theme-switch-wrapper");
-  const bar = document.querySelector(".mobile-bar");
+  const bar = document.querySelector("#nav-icon");
   const icons = document.querySelector(".fixed-icons");
   const email = document.querySelector(".fixed-email");
 

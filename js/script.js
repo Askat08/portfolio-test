@@ -6,9 +6,10 @@ const image2 = document.getElementById("image2");
 const image3 = document.getElementById("image3");
 const aboutImg = document.getElementById("about-img");
 const textBox = document.getElementById("text-box");
-const bar = document.querySelector("#nav-icon4");
+const bar = document.querySelector("#nav-icon");
 const sidebar = document.querySelector(".sidebar");
 const splash = document.querySelector(".splash");
+const sections = document.querySelectorAll("section");
 let dark = true;
 // const nav = document.getElementById('nav');
 
@@ -59,13 +60,16 @@ function switchTheme(event) {
 function barToggle() {
   sidebar.classList.toggle("side-toggle");
   bar.classList.toggle("open");
-  console.log("toggle");
+  document.body.classList.toggle("overflowY");
+  sections.forEach((section) => {
+    section.classList.toggle("blur");
+  });
 }
 
 // Hide side bar on click outside if div
 window.onload = function () {
   document.onclick = function (e) {
-    if (e.target.id !== "nav-icon4") {
+    if (e.target.id !== "nav-icon") {
       //element clicked wasn't the div; hide the div
       // sidebar.classList.remove("side-toggle");
       // bar.classList.remove("open");
